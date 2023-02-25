@@ -1,6 +1,6 @@
 import "./about.css";
 import { articles } from "../../constants/about";
-import Image from "cloudinary-react";
+import { Image } from "cloudinary-react";
 
 const About = () => {
    return (

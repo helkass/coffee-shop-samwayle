@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import address from "../../constants/address";
 import "./adress.css";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { Image } from "cloudinary-react";
+
 const Adress = () => {
    const [btnAddress, setBtnAddress] = useState(false);
    const width = window.innerWidth;
