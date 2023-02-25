@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import logo from "../../assets/logo.png";
-import logo_text from "../../assets/logo_text.png";
+import Logo from "../../assets/logo.png";
+import Logo_text from "../../assets/logo_text.png";
 import { links } from "../../constants/navbar";
 import { FaFacebookF, FaBars } from "react-icons/fa";
 import { IoLogoTwitter, IoLogoInstagram } from "react-icons/io";
@@ -19,8 +19,8 @@ const Navbar = () => {
             </button>
             <Link to="/">
                <div className="logo">
-                  <img className="logo-img" src={logo} />
-                  <img className="logo-text" src={logo_text} />
+                  <img className="logo-img" src={Logo || ""} />
+                  <img className="logo-text" src={Logo_text || ""} />
                </div>
             </Link>
             <span></span>
@@ -37,17 +37,17 @@ const Navbar = () => {
             {/* mobile only */}
             <div className="list-icons-nav">
                <li className="social-icon">
-                  <a href="www.google.com">
+                  <a target="_blank" href="/">
                      <IoLogoTwitter size={20} />
                   </a>
                </li>
                <li className="social-icon">
-                  <a href="www.google.com">
+                  <a target="_blank" href="/">
                      <IoLogoInstagram size={20} />
                   </a>
                </li>
                <li className="social-icon">
-                  <a href="www.google.com">
+                  <a target="_blank" href="/">
                      <FaFacebookF size={20} />
                   </a>
                </li>
