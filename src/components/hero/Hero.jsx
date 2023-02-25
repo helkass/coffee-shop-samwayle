@@ -1,9 +1,9 @@
 import "./hero.css";
-import image from "../../assets/hero-image.png";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { IoLogoTwitter, IoLogoInstagram } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Image } from "cloudinary-react";
 
 const Hero = () => {
    return (
@@ -21,21 +21,31 @@ const Hero = () => {
                   <HiOutlineArrowNarrowRight size={28} />
                </button>
                <div className="image-container">
-                  <img className="hero-image" src={image} alt="hero image" />
+                  <Image
+                     cloudName="dqpuhvgdp"
+                     publicId="https://res.cloudinary.com/dqpuhvgdp/image/upload/v1677310938/samwayle-coffee-shop/hero-image_gxspv5.png"
+                     className="hero-image"
+                  />
                </div>
                <ul className="list-icons">
                   <li className="social-icon">
-                     <a href="www.google.com">
+                     <a
+                        target="_blank"
+                        href="https://www.instagram.com/helka_septyawan/">
                         <IoLogoTwitter size={20} />
                      </a>
                   </li>
                   <li className="social-icon">
-                     <a href="www.google.com">
+                     <a
+                        target="_blank"
+                        href="https://www.instagram.com/helka_septyawan/">
                         <IoLogoInstagram size={20} />
                      </a>
                   </li>
                   <li className="social-icon">
-                     <a href="www.google.com">
+                     <a
+                        target="_blank"
+                        href="https://www.instagram.com/helka_septyawan/">
                         <FaFacebookF size={20} />
                      </a>
                   </li>
