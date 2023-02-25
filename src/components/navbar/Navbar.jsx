@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import Logo from "../../assets/logo.png";
-import Logo_text from "../../assets/logo_text.png";
 import { links } from "../../constants/navbar";
 import { FaFacebookF, FaBars } from "react-icons/fa";
 import { IoLogoTwitter, IoLogoInstagram } from "react-icons/io";
