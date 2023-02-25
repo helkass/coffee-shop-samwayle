@@ -7,6 +7,7 @@ import { links } from "../../constants/navbar";
 import { FaFacebookF, FaBars } from "react-icons/fa";
 import { IoLogoTwitter, IoLogoInstagram } from "react-icons/io";
 import { AiOutlineClose } from "react-icons/ai";
+import { Image } from "cloudinary-react";
 
 const Navbar = () => {
    const [bar, setBar] = useState(false);
@@ -19,8 +20,16 @@ const Navbar = () => {
             </button>
             <Link to="/">
                <div className="logo">
-                  <img className="logo-img" src={Logo || ""} />
-                  <img className="logo-text" src={Logo_text || ""} />
+                  <Image
+                     cloudName="dqpuhvgdp"
+                     publicId="https://res.cloudinary.com/dqpuhvgdp/image/upload/v1677308865/samwayle-coffee-shop/Logo_vnkjkv.png"
+                     className="logo-img"
+                  />
+                  <Image
+                     cloudName="dqpuhvgdp"
+                     publicId="https://res.cloudinary.com/dqpuhvgdp/image/upload/v1677308872/samwayle-coffee-shop/Logo_text_rusjxm.png"
+                     className="logo-text"
+                  />
                </div>
             </Link>
             <span></span>
