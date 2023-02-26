@@ -34,7 +34,7 @@ const Navbar = () => {
          </div>
          <div className={`nav-links ${bar && "remove-left"}`}>
             {links.map((link, i) => (
-               <Link to={link.link} key={i}>
+               <Link onClick={() => setBar(false)} to={link.link} key={i}>
                   <button className="btn-nav">{link.title}</button>
                </Link>
             ))}
